@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+    <head>
+        <title>BLOG | Del'Gaudio</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Francisco Castro Del'Gaudio Junior">
+        <meta name="description" content="primeiro projeto pessoal">
+        <meta name="keywords" content="#">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+        
+        <style>
+            body{
+                font-family: 'Kumbh Sans', sans-serif;
+                background: #ededed;
+            }
+
+            p::selection, h1::selection, li::selection{
+                background-color: green;
+            }
+
+            /*CABEÇALHO*/
+            header{
+                position:fixed;
+                background: linear-gradient(rgb(0, 196, 255), rgb(0, 14, 124));
+                height: 100%;
+                width: 25%;
+                line-height: 1.5;
+            }
+
+            .align{
+                text-align: center;
+            }
+
+            header img{
+                width:50%;
+                margin:200px 0 20px;
+                border-radius:50%;
+                border: solid rgb(0, 196, 255) 2px;
+                box-shadow: 2px 2px 20px black;
+            }
+
+            .paragrafo-header{
+                width: 99%;
+                margin-bottom:15px;
+                font-size: 20px;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .paragrafo-header + p{
+                width: 99%;
+                text-align: center;
+
+            }
+            /*FIM DO CABEÇALHO*/
+
+            /*MENU*/
+            nav{
+                height: 50px;
+                width: 100%;
+                background-color: rgb(0, 196, 255);
+                position: fixed;
+                text-align: center;
+                box-shadow: 0px -8px 15px;
+                z-index: 999;
+                top:0;
+            }
+
+            nav ul li{
+                display: inline-block;
+                margin: 6px 50px 0;
+                text-align: center;
+                padding: 13px 10px 10px 10px;
+                width: 100px;
+            }
+
+            nav ul li a{
+                padding: 13px 10px 10px 10px;
+                text-decoration: none;
+                color:white;
+            }
+
+            li a:hover{
+                color: rgb(0, 196, 255);
+                transition: 0.5s;
+                background-color:white;
+            }
+            /*FIM DO MENU*/
+
+            /*FORMULÁRIO*/
+            form{
+                margin:100px 30px 0 30%;
+                background: white;
+                width: 65%;
+                padding: 40px;
+                box-sizing: border-box;
+                box-shadow: 0.1px 0.1px 5px black;
+            }
+
+            .contato{
+                float:left;
+                width: 45%;
+                margin: 0 20px 30px 0;
+            }
+
+            .label-nome, .label-email, .label-msg{
+                display: block;
+                margin-bottom:5px;
+            }
+
+            #nome, #email{
+                width: 100%;
+                padding:10px;
+                box-sizing: border-box;
+                border:solid 2px rgb(0, 196, 255);
+                font-family: 'Kumbh Sans', sans-serif;
+                letter-spacing: 1.5px;
+            }
+
+            #texto{
+                width: 100%;
+                height: 150px;
+                border: solid 2px rgb(0, 196, 255);
+                font-family: 'Kumbh Sans', sans-serif;
+                letter-spacing: 2px;
+                padding: 10px;
+                line-height: 2;
+            }
+
+            .focus:focus{
+                box-shadow:0 0 0 0;
+                outline: 0;
+                font-weight: bold;
+                background-color:#ededed
+            }
+
+            .clear{
+                clear:left;
+                display: block;
+                width: 73%;
+                margin-bottom:10px;
+            }
+
+            #botao{
+                display: block;
+                color:rgb(0, 196, 255);
+                background: white;
+                border:none;
+                padding:10px;
+                margin:30px auto 0;
+                border:solid 2px rgb(0, 196, 255);
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            #botao:active{
+                color:rgb(0, 196, 255);
+                background: white;
+                border:none;
+                border:solid 2px rgb(0, 196, 255);
+                font-weight: bold;
+                outline:0;
+            }
+
+            #copia{
+                margin-right: 10px;
+            }
+/*FIM FO FORMULÁRIO*/
+            
+/*CHECKBOX*/
+            
+             input[type="checkbox"]{
+                display: none;
+            }
+            
+            label{
+                position: relative;
+            }           
+            
+            input[type="checkbox"] + label:after{
+                content: '';
+                display: inline-block;
+                width: 50px;
+                height: 25px;
+                background-color: #ededed;
+                box-sizing: border-box;
+                border-radius:500px;
+                transition: all 0.1s linear;
+                margin:0 0 0 10px;
+                position: relative;
+                top:8px;
+            }
+            
+            input[type="checkbox"] + label span{
+                width:17px;
+                height:17px;
+                position: absolute;
+                top:-1px;
+                right:28px;
+                border-radius:50%;
+                background-color:white;
+                transition: all 0.1s linear;
+                z-index: 999;
+            }
+            
+            input[type="checkbox"]:checked + label span{
+                position:absolute;
+                top:-1px;
+                right:5px;;
+            }
+            
+            input[type="checkbox"]:checked + label:after{
+                background-color: rgb(0, 196, 255);
+            }
+            
+/*FIM DO CHECKBOX*/
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="align">
+            <img src="../imagens/perfil.png">
+            </div>
+            <p class="paragrafo-header">Francisco Castro Del'Gaudio Junior</p>
+            <p>Criou este blog para treinar e criar portfólio</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li> <a href="../index.html">Home</a>
+                </li>
+                <li> <a href="#"> Back-End</a>
+                </li>
+                <li> <a href="html/_contato.html">Contato</a>
+                </li>
+                <li> <a href="#">Javascript</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <main>
+            
+            <h1>FORMULÁRIO DE CONTATO</h1>
+            <form action="#" method="post">
+                <div class="contato">
+                <label for="nome" class=label-nome>Nome</label> 
+                <input type="text" id="nome" class="focus">
+                </div>
+                
+                <div class="contato">
+                <label for="email" class="label-email">Email</label> 
+                <input type="email" id="email" class="focus">
+                </div>   
+                
+                <div class="clear">
+                <label for="texto" class="label-msg">Mensagem</label> 
+                <textarea id="texto" value="texto" class=focus></textarea>
+                </div>
+                
+                <div class=""> 
+                <input type="Checkbox" id="copia" value="sim">
+                    <label for="copia"><span></span>Envie uma cópia para o meu e-mail</label>
+                </div>    
+                
+                <input type="submit" value="Enviar" id="botao">
+            </form>
+            
+        </main>
+        
+        <footer>
+        </footer>
+    </body>
+</html>

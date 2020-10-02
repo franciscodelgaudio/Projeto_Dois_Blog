@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+    <head>
+        <title>BLOG | Del'Gaudio</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Francisco Castro Del'Gaudio Junior">
+        <meta name="description" content="primeiro projeto pessoal">
+        <meta name="keywords" content="#">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/reset.css">
+        
+        <style>
+            body{
+                font-family: 'Kumbh Sans', sans-serif;
+            }
+/*NAV*/
+            
+            nav{
+    height: 50px;
+    width: 100%;
+    background-color: #f5c02e;
+    position: fixed;
+    text-align: center;
+    box-shadow: 0px -8px 15px;
+    border-bottom:solid 1px rgba(0, 0, 0, 0);
+    z-index: 999;
+    top:0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 6px 50px 0;
+    text-align: center;
+    padding: 13px 10px 10px 10px;
+    width: 100px;
+    color:white;
+}
+
+li:hover{
+    color: #f5c02e;
+    transition: 0.5s;
+    background-color: white;
+    cursor: pointer;
+}
+            
+/*fim da NAV*/
+            
+            /*CABEÇALHO*/
+header{
+    position:fixed;
+    background: linear-gradient(#f5c02e, #9a2f00);
+    height: 100%;
+    width: 25%;
+    line-height: 1.5;
+}
+
+.align{
+    text-align: center;
+}
+
+header img{
+    width:50%;
+    margin:200px 0 20px;
+    border-radius:50%;
+    border: solid yellow 2px;
+    box-shadow: 2px 2px 20px black;
+}
+
+.paragrafo-header{
+    width: 99%;
+    margin-bottom:15px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.paragrafo-header + p{
+    width: 99%;
+    text-align: center;
+
+}
+/*FIM DO CABEÇALHO*/
+            
+            main{
+                position:relative;
+                top:100px;
+                margin:0 100px 0 30%;
+            }
+            
+            main h1{
+                color:white;;
+                text-align: center;
+                background: #f5c02e;
+                padding: 20px;
+            }
+            
+            main img{
+                width: 100%;
+                margin: 20px 0;
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        <header>
+            <div class="align">
+            <img src="../imagens/perfil.png">
+            </div>
+            <p class="paragrafo-header">Francisco Castro Del'Gaudio Junior</p>
+            <p>Criou este blog para treinar e criar portfólio</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li> Front-End
+                </li>
+                <li> Back-End
+                </li>
+                <li> HTML, CSS
+                </li>
+                <li> Javascript
+                </li>
+            </ul>
+        </nav>
+        
+        <main>
+            <h1>CSS - MODELO DE CAIXA (BOX MODEL)</h1>
+            <img src="../imagens/paginaum.png">
+            <p>
+            HEIGHT e WIDTH: Representam as medidas do content (conteúdo).<br><br>
+            PADDING: ou preenchimento, se auto-explica, ou seja, ele preenche o espaço entre o conteúdo e sua borda.<br><br>
+            BORDER: Envolve o conteúdo e o singulariza diante dos demais elementos. Possue três valore: weight, style, color. <br><br>
+            MARGIN: É a distância deste elemento para o elemento mais próximo a ele.<br><br> Possue 4 valores, funcionando em sentido horário começando do top.<br> Ex: p{margin: 4px 4px 4px 4px;}<br> O primeiro valor é TOP, o segundo é RIGHT, o terceiro é BOTTOM e o último é LEFT;
+            </p>
+        </main>
+        
+        <footer>
+            <p>&copy;</p>
+        </footer>
+    </body>
+</html>

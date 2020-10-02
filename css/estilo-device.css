@@ -1,0 +1,18 @@
+/*BODY*/
+/*FIM DO BODY*/
+/*HEADER*/
+header{
+    position:fixed;
+    width:25%;
+    height: 100%;
+    background-color:blue;
+}
+
+@media screen and (min-width: 800px){
+    
+}
+
+header img{
+    width:640px;
+}
+/*FIM DO HEADER*/
